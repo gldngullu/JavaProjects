@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ccrBrowserController">
+   <children>
+      <TabPane prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Graduates">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="510.0" prefWidth="747.0">
+                     <children>
+                        <Label layoutX="22.0" layoutY="24.0" text="Listing graduates for the year:" />
+                        <TableView fx:id="graduatesTable" layoutX="13.0" layoutY="59.0" prefHeight="489.0" prefWidth="777.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="C1" />
+                            <TableColumn prefWidth="75.0" text="C2" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="yearSelectionForGraduates" layoutX="227.0" layoutY="19.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Courses">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <Label layoutX="21.0" layoutY="24.0" text="Listing courses for the slot:" />
+                        <TableView fx:id="coursesTable" layoutX="13.0" layoutY="59.0" prefHeight="488.0" prefWidth="775.0">
+                            <columns>
+                                <TableColumn prefWidth="75.0" text="C1" />
+                                <TableColumn prefWidth="75.0" text="C2" />
+                            </columns>
+                        </TableView>
+                        <TextField fx:id="slotSelectionForCourses" layoutX="205.0" layoutY="19.0" prefHeight="31.0" prefWidth="165.0" />
+                        <TextField fx:id="yearSelectionForCourses" layoutX="581.0" layoutY="19.0" prefHeight="31.0" prefWidth="177.0" />
+                        <Label layoutX="418.0" layoutY="24.0" text="List depending on year:" />
+                    </children>
+                </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+5 5
+NoClue
+NoClue
+Clue 0 29
+Clue 0 10
+Clue 0 4
+NoClue
+Clue 11 0
+Puzzle
+Puzzle
+Puzzle
+NoClue
+Clue 15 4
+Puzzle
+Puzzle
+Puzzle
+Clue 12 0
+Puzzle
+Puzzle
+Puzzle
+NoClue
+Clue 9 0
+Puzzle
+Puzzle
+Puzzle
+NoClue
