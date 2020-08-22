@@ -10,7 +10,7 @@ public class Server {
     {
         String clientSentence;
         String capitalizedSentence;
-        ServerSocket welcomeSocket = new ServerSocket(443);
+        ServerSocket welcomeSocket = new ServerSocket(556);
         while(true)
         {
             Socket connectionSocket = welcomeSocket.accept();
@@ -20,7 +20,7 @@ public class Server {
             capitalizedSentence = clientSentence.toUpperCase() + '\n';
             outToClient.writeBytes(capitalizedSentence);
             connectionSocket.close();
-            //  welcomeSocket.close();
+            // welcomeSocket.close();
         }
     }
 }
